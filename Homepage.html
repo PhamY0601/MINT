@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- owlcarousel -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/Homepage.css">
+    <script src="js/Homepage.js"></script>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Mint Store</title>
+</head>
+
+<body>
+
+    <!-- Main-Home section -->
+    <section id="main-home">
+        <!-- Header -->
+        <div class="container">
+            <!-- NAVBAR -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">MINT</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#menu">MENU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team">TEAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav m-l-auto">
+                            <li class="nav-item1">
+                                <a class="nav-link" href="login.html">
+                                    <i class="fas fa-user-circle"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item1">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item1">
+                            <li class='searchBox'>
+                                <form>
+                                    <span class='closeSearch'> </span>
+                                    <input type='text' id='search' placeholder='search' />
+                                    <span class='toggleSearch'></span>
+                                </form>
+                            </li>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- NAVBAR -->
+            <main>
+                <!-- HOME -->
+                <section class="home bg-white" id="home">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <div class="textBox">
+                            <h2>We Love
+                                Delicious Foods!</h2>
+                            <a href="#" class="btn btn-theme">ODER NOW</a>
+                        </div>
+
+                        <div class="imgBox">
+                            <img src="image/menu2.png" class="product">
+                        </div>
+                    </div>
+                    <ul class="thumb">
+                        <li><img src="image/menu1.png" onclick="imgSlider('image/b.png'); changeCircleColor('#d5e4c3')">
+                        </li>
+                        <li><img src="image/menu2.png"
+                                onclick="imgSlider('image/menu2.png'); changeCircleColor('#f4cfdf')"></li>
+                        <li><img src="image/menu3.png"
+                                onclick="imgSlider('image/menu3.png'); changeCircleColor('#f9968b')"></li>
+                    </ul>
+                </section>
+                <!-- HOME -->
+
+                <!-- ABOUT -->
+                <section class="about bg-zin" id="about">
+                    <div class="row">
+                        <div class="col-6 col-sm-6 img-bg d-flex-items-center justify-content-md-end">
+                            <img src="image/about.png" alt="">
+                        </div>
+                        <div class="col-6 col-sm-6 ">
+                            <div class="heading-section pl-lg-5 ml-md-5">
+                                <h1 class="subheading">
+                                    About
+                                </h1>
+                                <h2>
+                                    Welcome to Mint
+                                </h2>
+                                <p> Mint là sản phẩm của đồ án môn Phát triển ứng dụng web thuộc khoa Hệ
+                                    thống thông tin, trường Đại học Công nghệ Thông tin.
+                                    <br>
+                                    Sản phẩm này được xây dựng bởi 4 thành viên...
+                                    <a href="About.html" class="read-more">
+                                        Read More
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ABOUT -->
+
+                <!-- MENU -->
+                <section class="menu bg-tim" id="menu">
+                    <div class="row">
+                        <div class="menu-text">
+                            <h1>Menu</h1>
+                        </div>
+                        <div class="menu1 bg-zin">
+                            <img src="image/menu4.png" />
+                            <div class="menu1-text">
+                                <h1>Bánh Donut</h1>
+                                <div class="menu1-text-star">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <p>
+                                    Donut hay còn gọi là Donughnut.
+                                    Bánh thường được phủ nhiều loại kem, socola và những hạt cốm nhiều màu
+                                    sắc bên ngoài để trang trí.
+                                </p>
+                                <button class="button-menu">Xem thêm</button>
+                            </div>
+                        </div>
+
+                        <div class="menu1 bg-sea">
+                            <img src="image/menu2.png" />
+                            <div class="menu1-text">
+                                <h1>Bánh kem</h1>
+                                <div class="menu1-text-star">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <p>
+                                    Bánh kem tươiđược làm từ những nguyên liệu chất lượng, tốt cho sức
+                                    khỏe người dùng. Bánh được trang trí trang nhã, sang trọng phù hợp với mọi bữa tiệc
+                                    của bạn.
+
+
+                                </p>
+                                <button class="button-menu">Xem thêm</button>
+                            </div>
+                        </div>
+                        <div class="menu1 bg-linen">
+                            <img src="image/menu3.png" />
+                            <div class="menu1-text">
+                                <h1>Bánh Mochi</h1>
+                                <div class="menu1-text-star">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <p>
+                                    Bánh mochi là món bánh truyền thống của nước Nhật. Món bánh này được biết đến như
+                                    loại bánh giầy nhân ngọt rất phổ biến ở xứ Phù Tang.</p>
+                                <button class="button-menu">Xem thêm</button>
+                            </div>
+                        </div>
+                        <div class="menu1">
+                            <button class="buttonmenu">Xem tất cả</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- MENU -->
+
+                <!-- TEAM -->
+                <section class="team bg-sea" id="team">
+                    <div class="container">
+                        <div class="team-text">
+                            <h2>Team</h2>
+                            <h1>SSD-1TB</h1>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-4 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="image/nghi.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Võ Hồng Nghi</h5>
+                                        <p class="card-text">
+                                            Web Developer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="image/nghi.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Đỗ Thị Thảo Nguyên</h5>
+                                        <p class="card-text">
+                                            Web Developer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="image/trang.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hoàng Thu Trang</h5>
+                                        <p class="card-text">
+                                            Web Developer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="image/y.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phạm Thị Như Ý</h5>
+                                        <p class="card-text">
+                                            Web Developer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- TEAM -->
+
+                <!-- CONTACT -->
+
+                <section class="section-bg bg-zin" id="contact">
+                    <div class="overlay pt-100 pb-100 ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="contact-text">
+                                    <h2>CONTACT</h2>
+                                    <p style="color:red;"><em>We love our fans!</em></p>
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-center">
+
+                                    <div class="contact-content">
+                                        <h3>Bạn có thể liên hệ với chúng tôi qua:</h3>
+                                        <p style="font-style: italic;"><i class="fas fa-home"></i> Bến Tre</p>
+                                        <p style="font-style: italic;"><i class="fas fa-phone"></i> +84 834324241</p>
+                                        <p style="font-style: italic;"><i class="fas fa-envelope-open-text"></i>
+                                            19522556@gm.uit.edu.vn </p>
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-center">
+                                    <div id="map" style="width:500px;height:500px;">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31424.64507290039!2d106.47854792281593!3d10.092479038408316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a00231b1d8a81b%3A0xc06da89f217424b1!2zSMawbmcgTmjGsOG7o25nLCBHaeG7k25nIFRyw7RtIERpc3RyaWN0LCBCZW4gVHJlLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1622522263393!5m2!1sen!2s"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+        </div>
+    </section>
+    </main>
+
+    <footer id="footer"">
+        <div class=" main-footer widgets-dark typo-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget subscribe no-box">
+                        <h5 class="widget-title brand">MINT<span></span></h5>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Quick Links<span></span></h5>
+                        <ul class="thumbnail-widget">
+                            <li>
+                                <div class="thumb-content"><a href="#home">Home</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#about">About</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#menu">Menu</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#team">Team</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#contact">Contact</a></div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Get Started<span></span></h5>
+                        <p>Trở thành thành viên để nhận được khuyến mãi</p>
+                        <a class="btn btn-theme" href="login.html" target="_blank">Register Now</a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Contact Us<span></span></h5>
+
+                        <p><a href="mailto:19522556@gm.uit.edu.vn" title="glorythemes">19522556@gm.uit.edu.vn</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>MINT © 2021. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+</body>
+
+</html>
